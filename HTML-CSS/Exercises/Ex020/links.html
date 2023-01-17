@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* Seletores Personalizados 
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color:red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{ /*Muda a cor para vermelho se a pagina ja foi visitada*/
+            color:darkred;
+        }
+        a:hover{/*Quando passa o mouse por cima, a informacao aparece conforme esta configurado abaixo, nesse exemplo, aparece as letras pretas e com sublinhado embaixo*/
+            color:black;
+            text-decoration: underline;
+        }
+        a:active{/*Quando clica no link, muda o formato conforme o que esta informado abaixo. Neste exemplo, ao clicar, o link fica amarelo.*/
+            color:yellow;
+        }
+        .especial{
+            background-color: rgb(13, 233, 13);
+        }
+        .especial::before {/*Adiciona palavra ou simbolo antes de iniciar o link.*/
+            content:'teste';
+        }
+        .especial::after {/*Adiciona uma palavra ao final do link, mas sem compremeter a funcionalidade do link adicionado na tag href.*/
+            content:'[link]';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/JuMaxi" target="_blank">Repositorio Github</a></li><!--Target="blank" o site do link clicado abre em outra pagina-->
+        <li><a href="https://www.youtube.com/" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.duolingo.com/learn">Site do duolingo</a></li>
+    </ul>
+</body>
+</html>
