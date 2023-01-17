@@ -8,10 +8,23 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;/*Essa combinacao de fontes, e chamada de Safec combinations, o dispositivo inicial tentando colocar a primeira e assim por diante. Se colocar apenas uma categoria de fonte, o dispositivo e que vai escolher qual usar, por exemplo, poderia colocar apenas sans-serif ou monoespacada etc.*/
+            
+            /*Medidas absolutas 
+            cm, mm, in, px, pt, pc
+
+            Medidas relativas
+            em, ex, rem, vw, vh, % - existem outras medidas tambem, mas normalmente se utiliza o em
+            16px geralmente e igual a 1em.
+            Para sites o indicado e utilizar em.
+            Utilizar em ou px (recomendacao oficial)
+            */
+            font-size: 1em;
+
+            font-weight: normal; /*peso da fonte - lighter, normal, bold, bolder*/
+            font-style: italic;
+            text-decoration: underline;/*sublinhado*/
         }
-        h1, h2{
-            font-family: 'Times New Roman', Times, serif;
-        }
+        /*shorthand (consegue dizer varias propriedades numa unica linha) font (ordem) - font style, font weight, font size, font family. Se trocar esta ordem, nao funciona certo.*/
     </style>
 </head>
 <body>
