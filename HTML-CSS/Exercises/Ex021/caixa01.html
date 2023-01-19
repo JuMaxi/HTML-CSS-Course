@@ -6,20 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de Caixas</title>
     <style>
+        /*Este elemento e do tipo box-level*/
         h1{
             background-color: lightcoral;
             height: 300px;
             width: 300px;
+
             border-width: 10px;
             border-style: solid;
             border-color: darkslategray;
+
+            /*Shorthand para simplificar as bordas:
+            border:10px solid darklategray
+            */
 
             padding-top: 10px;
             padding-right: 10px;
             padding-bottom: 10px;
             padding-left: 10px;
+
+            /*Shorthand para simplificar padding:
+            padding: 10px 10px 10px 10px - se todas as medidas forem iguais como nesse exemplo, bastaria colocar uma unica medida, nesse exemplo ainda, um unico 10px bastaria. Se colocar dois valores, a margem de cima e de baixo ficam iguais entre si e a da esquerda e direita ficam iguais entre si.
+            */
+
+            /*margin:auto;/*centraliza a caixa*/
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            /*Shorthand para simplificar as margens:
+            margin: 20px 20px 40px 20px Se substituir as medidas da margem esquerda e direita por auto, a caixa ira centralizar.
+            */
+            
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blueviolet;
+
+            
+            /*Shorthand para simplificar outline:
+            outline: 5px dashed blueviolet
+            */
+
         }
+        /*Este elemento e do tipo box-inline*/
         a{
+            /*as mesmas configuracoes de shorthand acima, tambem servem para outras tags, como essa por exemplo. Daria para substuir as medidas abaixo, por shorthands.*/
             border-width: 10px;
             border-style: solid;
             border-color:red;
@@ -28,6 +61,8 @@
             padding-right: 10px;
             padding-bottom: 10px;
             padding-left: 10px;
+
+           
         }
     </style>
 </head>
